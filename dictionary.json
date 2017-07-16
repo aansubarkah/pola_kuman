@@ -1,0 +1,746 @@
+{
+    "settings": {
+        "columns": "8",
+		"color_r":"red",
+		"color_i":"green",
+		"color_s":"yellow",
+        "months_long_id": {
+            "1": {
+                "alias": "1",
+                "name": "januari"
+            },
+            "2": {
+                "alias": "2",
+                "name": "februari"
+            },
+            "3": {
+                "alias": "3",
+                "name": "maret"
+            },
+            "4": {
+                "alias": "4",
+                "name": "april"
+            },
+            "5": {
+                "alias": "5",
+                "name": "mei"
+            },
+            "6": {
+                "alias": "6",
+                "name": "juni"
+            },
+            "7": {
+                "alias": "7",
+                "name": "juli"
+            },
+            "8": {
+                "alias": "8",
+                "name": "agustus"
+            },
+            "9": {
+                "alias": "9",
+                "name": "september"
+            },
+            "10": {
+                "alias": "10",
+                "name": "oktober"
+            },
+            "11": {
+                "alias": "11",
+                "name": "november"
+            },
+            "12": {
+                "alias": "12",
+                "name": "desember"
+            }
+        },
+        "months_long_en": {
+            "1": {
+                "alias": "1",
+                "name": "january"
+            },
+            "2": {
+                "alias": "2",
+                "name": "february"
+            },
+            "3": {
+                "alias": "3",
+                "name": "march"
+            },
+            "4": {
+                "alias": "4",
+                "name": "april"
+            },
+            "5": {
+                "alias": "5",
+                "name": "may"
+            },
+            "6": {
+                "alias": "6",
+                "name": "juny"
+            },
+            "7": {
+                "alias": "7",
+                "name": "july"
+            },
+            "8": {
+                "alias": "8",
+                "name": "august"
+            },
+            "9": {
+                "alias": "9",
+                "name": "september"
+            },
+            "10": {
+                "alias": "10",
+                "name": "october"
+            },
+            "11": {
+                "alias": "11",
+                "name": "november"
+            },
+            "12": {
+                "alias": "12",
+                "name": "december"
+            }
+        },
+        "months_sort_en": {
+            "1": {
+                "alias": "1",
+                "name": "jan"
+            },
+            "2": {
+                "alias": "2",
+                "name": "feb"
+            },
+            "3": {
+                "alias": "3",
+                "name": "mar"
+            },
+            "4": {
+                "alias": "4",
+                "name": "apr"
+            },
+            "5": {
+                "alias": "5",
+                "name": "may"
+            },
+            "6": {
+                "alias": "6",
+                "name": "jun"
+            },
+            "7": {
+                "alias": "7",
+                "name": "jul"
+            },
+            "8": {
+                "alias": "8",
+                "name": "aug"
+            },
+            "9": {
+                "alias": "9",
+                "name": "sep"
+            },
+            "10": {
+                "alias": "10",
+                "name": "oct"
+            },
+            "11": {
+                "alias": "11",
+                "name": "nov"
+            },
+            "12": {
+                "alias": "12",
+                "name": "dec"
+            }
+        },
+        "months_sort_id": {
+            "1": {
+                "alias": "3",
+                "name": "mar"
+            },
+            "2": {
+                "alias": "2",
+                "name": "feb"
+            },
+            "4": {
+                "alias": "4",
+                "name": "apr"
+            },
+            "5": {
+                "alias": "5",
+                "name": "mei"
+            },
+            "6": {
+                "alias": "6",
+                "name": "jun"
+            },
+            "7": {
+                "alias": "7",
+                "name": "jul"
+            },
+            "8": {
+                "alias": "8",
+                "name": "agu"
+            },
+            "9": {
+                "alias": "9",
+                "name": "sep"
+            },
+            "10": {
+                "alias": "10",
+                "name": "okt"
+            },
+            "11": {
+                "alias": "11",
+                "name": "nov"
+            },
+            "12": {
+                "alias": "12",
+                "name": "des"
+            }
+        }
+    },
+    "rooms": {
+        "l1ad": {
+            "name": "lontara 1 atas depan",
+            "alias": "l1ad",
+            "sheet": "l1ad",
+			"sequence": 1
+        },
+        "l1ab": {
+            "name": "lontara 1 atas belakang",
+            "alias": "l1ab",
+            "sheet": "l1ab",
+			"sequence": 2
+        },
+        "l1bd": {
+            "name": "lontara 1 bawah depan",
+            "alias": "l1bd",
+            "sheet": "l1bd",
+			"sequence": 3
+        },
+        "l1bb": {
+            "name": "lontara 1 bawah belakang",
+            "alias": "l1bb",
+            "sheet": "l1bb",
+			"sequence": 4
+        },
+        "l2ad": {
+            "name": "lontara 2 atas depan",
+            "alias": "l2ad",
+            "sheet": "l2ad",
+			"sequence": 5
+        },
+        "l2ab": {
+            "name": "lontara 2 atas belakang",
+            "alias": "l2ab",
+            "sheet": "l2ab",
+			"sequence": 6
+        },
+        "l2bd": {
+            "name": "lontara 2 bawah depan",
+            "alias": "l2bd",
+            "sheet": "l2bd",
+			"sequence": 7
+        },
+        "l2bb": {
+            "name": "lontara 2 bawah belakang",
+            "alias": "l2bb",
+            "sheet": "l2bb",
+			"sequence": 8
+        },
+        "l3ad": {
+            "name": "lontara 3 atas depan",
+            "alias": "l3ad",
+            "sheet": "l3ad",
+			"sequence": 9
+        },
+        "l3ab": {
+            "name": "lontara 3 atas belakang",
+            "alias": "l3ab",
+            "sheet": "l3ab",
+			"sequence": 10
+        },
+        "l3bd": {
+            "name": "lontara 3 bawah depan",
+            "alias": "l3bd",
+            "sheet": "l3bd",
+			"sequence": 11
+        },
+        "l3bb": {
+            "name": "lontara 3 bawah belakang",
+            "alias": "l3bb",
+            "sheet": "l3bb",
+			"sequence": 12
+        },
+        "l4ad": {
+            "name": "lontara 4 atas depan",
+            "alias": "l4ad",
+            "sheet": "l4ad",
+			"sequence": 13
+        },
+        "l4ab": {
+            "name": "lontara 4 atas belakang",
+            "alias": "l4ab",
+            "sheet": "l4ab",
+			"sequence": 14
+        },
+        "l4bd": {
+            "name": "lontara 4 bawah depan",
+            "alias": "l4bd",
+            "sheet": "l4bd",
+			"sequence": 15
+        },
+        "l4bb": {
+            "name": "lontara 4 bawah belakang",
+            "alias": "l4bb",
+            "sheet": "l4bb",
+			"sequence": 16
+        },
+        "pa": {
+            "name": "palem atas",
+            "alias": "pa",
+            "sheet": "pa",
+			"sequence": 17
+        },
+        "pb": {
+            "name": "palem bawah",
+            "alias": "pb",
+            "sheet": "pb",
+			"sequence": 18
+        },
+        "pcc1": {
+            "name": "pcc 1",
+            "alias": "pcc1",
+            "sheet": "pcc1",
+			"sequence": 19
+        },
+        "pcc2": {
+            "name": "pcc 2",
+            "alias": "pcc2",
+            "sheet": "pcc2",
+			"sequence": 20
+        },
+        "pcc3": {
+            "name": "pcc 3",
+            "alias": "pcc3",
+            "sheet": "pcc3",
+			"sequence": 21
+        },
+        "pcc4": {
+            "name": "pcc 4",
+            "alias": "pcc4",
+            "sheet": "pcc4",
+			"sequence": 22
+        },
+        "ic1": {
+            "name": "ic 1",
+            "alias": "ic1",
+            "sheet": "ic1",
+			"sequence": 23
+        },
+        "ic2": {
+            "name": "ic 2",
+            "alias": "ic2",
+            "sheet": "ic2",
+			"sequence": 24
+        },
+        "ic3": {
+            "name": "ic 3",
+            "alias": "ic3",
+            "sheet": "ic3",
+			"sequence": 25
+        },
+        "ic4": {
+            "name": "ic 4",
+            "alias": "ic4",
+            "sheet": "ic4",
+			"sequence": 26
+        },
+		"pakis": {
+            "name": "pakis",
+            "alias": "pakis",
+            "sheet": "pakis",
+			"sequence": 27
+        },
+        "cvcu": {
+            "name": "cvcu",
+            "alias": "cvcu",
+            "sheet": "cvcu",
+			"sequence": 28
+        },
+        "icu": {
+            "name": "icu",
+            "alias": "icu",
+            "sheet": "icu",
+			"sequence": 29
+        },
+        "picu": {
+            "name": "picu",
+            "alias": "picu",
+            "sheet": "picu",
+			"sequence": 30
+        },
+        "nicu": {
+            "name": "nicu",
+            "alias": "nicu",
+            "sheet": "nicu",
+			"sequence": 31
+        },
+		"igd pinang": {
+            "name": "igd pinang",
+            "alias": "igd_pinang",
+            "sheet": "igd pinang",
+			"sequence": 32
+        },
+        "igd bedah": {
+            "name": "igd bedah",
+            "alias": "igd_bedah",
+            "sheet": "igd bedah",
+			"sequence": 33
+        },
+        "igd non bedah": {
+            "name": "igd non bedah",
+            "alias": "igd_non_bedah",
+            "sheet": "igd non bedah",
+			"sequence": 34
+        },
+        "igd anak": {
+            "name": "igd anak",
+            "alias": "igd_anak",
+            "sheet": "igd anak",
+			"sequence": 35
+        },
+        "igd luka bakar": {
+            "name": "igd luka bakar",
+            "alias": "igd_luka_bakar",
+            "sheet": "igd luka bakar",
+			"sequence": 36
+        },
+        "igd obgyn": {
+            "name": "igd obgyn",
+            "alias": "igd_obgyn",
+            "sheet": "igd obgyn",
+			"sequence": 37
+        }
+    },
+    "speciments": {
+        "as": {
+            "name": "as",
+            "alias": "as"
+        },
+        "ba": {
+            "name": "ba",
+            "alias": "ba"
+        },
+        "ca": {
+            "name": "cairan asites",
+            "alias": "ca"
+        },
+        "cl": {
+            "name": "cl",
+            "alias": "cl"
+        },
+        "cp": {
+            "name": "cairan pleura",
+            "alias": "cp"
+        },
+        "cs": {
+            "name": "cairan otak",
+            "alias": "cs"
+        },
+        "dh": {
+            "name": "darah",
+            "alias": "dh"
+        },
+        "dr": {
+            "name": "sputum",
+            "alias": "dr"
+        },
+        "jr": {
+            "name": "jaringan",
+            "alias": "jr"
+        },
+        "nn": {
+            "name": "pus",
+            "alias": "nn"
+        },
+        "re": {
+            "name": "re",
+            "alias": "re"
+        },
+        "ti": {
+            "name": "feces",
+            "alias": "ti"
+        },
+        "tr": {
+            "name": "tr",
+            "alias": "tr"
+        },
+        "uk": {
+            "name": "uk",
+            "alias": "uk"
+        },
+        "ur": {
+            "name": "urin",
+            "alias": "ur"
+        }
+    },
+    "bacteries": {
+        "aba": {
+            "name": "acinetobacter baumannii",
+            "alias": "aba"
+        },
+        "aju": {
+            "name": "acinetobacter junii",
+            "alias": "aju"
+        },
+        "pce": {
+            "name": "burkholderia cepacia",
+            "alias": "pce"
+        },
+        "ecl": {
+            "name": "enterobacter cloacae",
+            "alias": "ecl"
+        },
+        "eco": {
+            "name": "escherichia coli",
+            "alias": "eco"
+        },
+        "kpn": {
+            "name": "klebsiella pneumoniae ss. pneumoniae",
+            "alias": "kpn"
+        },
+        "pae": {
+            "name": "pseudomonas aeruginosa",
+            "alias": "pae"
+        },
+        "spa": {
+            "name": "sphingomonas paucimobilis",
+            "alias": "spa"
+        },
+        "sau": {
+            "name": "staphylococcus aureus ss. aureus",
+            "alias": "sau"
+        },
+        "swa": {
+            "name": "staphylococcus warneri",
+            "alias": "swa"
+        },
+        "pma": {
+            "name": "stenotrophomonas maltophilia",
+            "alias": "pma"
+        },
+        "sru": {
+            "name": "serratia rubidaea",
+            "alias": "sru"
+        },
+        "efa": {
+            "name": "enterococcus faecalis",
+            "alias": "efa"
+        },
+        "pst": {
+            "name": "providencia stuartii",
+            "alias": "pst"
+        },
+        "sho": {
+            "name": "staphylococcus hominis ss. hominis",
+            "alias": "sho"
+        },
+        "ade": {
+            "name": "achromobacter xylosoxidans ss. denitrifican",
+            "alias": "ade"
+        },
+        "pmi": {
+            "name": "proteus mirabilis",
+            "alias": "pmi"
+        },
+        "shl": {
+            "name": "staphylococcus haemolyticus",
+            "alias": "shl"
+        },
+        "slu": {
+            "name": "staphylococcus lugdunensis",
+            "alias": "slu"
+        },
+        "g51": {
+            "name": "salmonella group 51 (o:51)",
+            "alias": "g51"
+        },
+        "kox": {
+            "name": "klebsiella oxytoca",
+            "alias": "kox"
+        },
+        "fin": {
+            "name": "chryseobacterium indologenes",
+            "alias": "fin"
+        },
+        "eae": {
+            "name": "enterobacter aerogenes",
+            "alias": "eae"
+        },
+        "psz": {
+            "name": "pseudomonas stutzeri",
+            "alias": "psz"
+        },
+        "sep": {
+            "name": "staphylococcus epidermidis",
+            "alias": "sep"
+        },
+        "sfo": {
+            "name": "serratia fonticola",
+            "alias": "sfo"
+        }
+    },
+    "antibiotics": {
+        "esbl": {
+            "name": "esbl",
+            "alias": "esbl"
+        },
+        "amp_nm": {
+            "name": "ampicillin",
+            "alias": "amp_nm"
+        },
+        "pip_nm": {
+            "name": "piperacillin",
+            "alias": "pip_nm"
+        },
+        "amc_nm": {
+            "name": "amoxicillin/clavulanic acid",
+            "alias": "amc_nm"
+        },
+        "sam_nm": {
+            "name": "ampicillin/sulbactam",
+            "alias": "sam_nm"
+        },
+        "czo_nm": {
+            "name": "cefazolin",
+            "alias": "czo_nm"
+        },
+        "cfp_nm": {
+            "name": "cefoperazone",
+            "alias": "cfp_nm"
+        },
+        "caz_nm": {
+            "name": "ceftazidime",
+            "alias": "caz_nm"
+        },
+        "cro_nm": {
+            "name": "ceftriaxone",
+            "alias": "cro_nm"
+        },
+        "ctx_nm": {
+            "name": "cefotaxime",
+            "alias": "ctx_nm"
+        },
+        "fep_nm": {
+            "name": "cefepime",
+            "alias": "fep_nm"
+        },
+        "fox_nm": {
+            "name": "cefoxitin",
+            "alias": "fox_nm"
+        },
+        "atm_nm": {
+            "name": "aztreonam",
+            "alias": "atm_nm"
+        },
+        "dor_nm": {
+            "name": "doripenem",
+            "alias": "dor_nm"
+        },
+        "etp_nm": {
+            "name": "ertapenem",
+            "alias": "etp_nm"
+        },
+        "ipm_nm": {
+            "name": "imipenem",
+            "alias": "ipm_nm"
+        },
+        "mem_nm": {
+            "name": "meropenem",
+            "alias": "mem_nm"
+        },
+        "amk_nm": {
+            "name": "amikacin",
+            "alias": "amk_nm"
+        },
+        "gen_nm": {
+            "name": "gentamicin",
+            "alias": "gen_nm"
+        },
+        "tob_nm": {
+            "name": "tobramycin",
+            "alias": "tob_nm"
+        },
+        "cip_nm": {
+            "name": "ciprofloxacin",
+            "alias": "cip_nm"
+        },
+        "lvx_nm": {
+            "name": "levofloxacin",
+            "alias": "lvx_nm"
+        },
+        "sxt_nm": {
+            "name": "trimethoprim/sulfamethoxazole",
+            "alias": "sxt_nm"
+        },
+        "nit_nm": {
+            "name": "nitrofurantoin",
+            "alias": "nit_nm"
+        },
+        "dox_nm": {
+            "name": "doxycycline",
+            "alias": "dox_nm"
+        },
+        "tgc_nm": {
+            "name": "tigecycline",
+            "alias": "tgc_nm"
+        },
+        "oxa_nm": {
+            "name": "oxacillin",
+            "alias": "oxa_nm"
+        },
+        "rif_nm": {
+            "name": "rifampin",
+            "alias": "rif_nm"
+        },
+        "mfx_nm": {
+            "name": "moxifloxacin",
+            "alias": "mfx_nm"
+        },
+        "cli_nm": {
+            "name": "clindamycin",
+            "alias": "cli_nm"
+        },
+        "ery_nm": {
+            "name": "erythromycin",
+            "alias": "ery_nm"
+        },
+        "lnz_nm": {
+            "name": "linezolid",
+            "alias": "lnz_nm"
+        },
+        "van_nm": {
+            "name": "vancomycin",
+            "alias": "van_nm"
+        },
+        "qda_nm": {
+            "name": "quinupristin/dalfopristin",
+            "alias": "qda_nm"
+        },
+        "tcy_nm": {
+            "name": "tetracycline",
+            "alias": "tcy_nm"
+        },
+        "pol_nm": {
+            "name": "polymixin b",
+            "alias": "pol_nm"
+        },
+        "tmp_nm": {
+            "name": "trimethoprim",
+            "alias": "tmp_nm"
+        }
+    }
+}
