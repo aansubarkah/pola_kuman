@@ -380,7 +380,8 @@ class KumKum(object):
 				fileName = fileName + '360_' + key + '.png'
 				fileName = newDir + '/' + fileName
 				img.save(fileName)
-	
+				
+		
 	def newDoc(self, data = {}, month = 5, year = 2017, months = None, rooms = {}, max_columns = 8):
 		from os import path
 		from os import makedirs
@@ -389,8 +390,8 @@ class KumKum(object):
 		from docx.enum.text import WD_ALIGN_PARAGRAPH
 		from docx.enum.section import WD_ORIENT
 		from docx.enum.table import WD_TABLE_ALIGNMENT
-		#from docx.oxml.ns import nsdecls
-		#from docx.oxml import parse_xml
+		from docx.oxml.ns import nsdecls
+		from docx.oxml import parse_xml
 
 		# Set a cell background (shading) color to RGB D9D9D9. 
 		#shading_elm = parse_xml(r'<w:shd {} w:fill="D9D9D9"/>'.format(nsdecls('w')))
@@ -588,6 +589,9 @@ class KumKum(object):
 								table.cell(valueRow, columnCounter).text = str(b['count']) + '(' + str(val) + ')'
 								table.cell(valueRow, columnCounter).width = Inches(1.1)
 								table.cell(valueRow, columnCounter).paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+								shading_elm = parse_xml(r'<w:shd {} w:fill="FF0000"/>'.format(nsdecls('w')))
+								table.cell(valueRow, columnCounter)._tc.get_or_add_tcPr().append(shading_elm)
+								#cell._tc.get_or_add_tcPr().append(shading_elm)
 								
 								columnCounter += 1
 								columnCount += 1
@@ -679,6 +683,8 @@ class KumKum(object):
 								table.cell(valueRow, columnCounter).text = str(b['count']) + '(' + str(val) + ')'
 								table.cell(valueRow, columnCounter).width = Inches(1.1)
 								table.cell(valueRow, columnCounter).paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+								shading_elm = parse_xml(r'<w:shd {} w:fill="7FFF00"/>'.format(nsdecls('w')))
+								table.cell(valueRow, columnCounter)._tc.get_or_add_tcPr().append(shading_elm)
 								
 								columnCounter += 1
 								columnCount += 1
@@ -770,6 +776,8 @@ class KumKum(object):
 								table.cell(valueRow, columnCounter).text = str(b['count']) + '(' + str(val) + ')'
 								table.cell(valueRow, columnCounter).width = Inches(1.1)
 								table.cell(valueRow, columnCounter).paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+								shading_elm = parse_xml(r'<w:shd {} w:fill="FFFF00"/>'.format(nsdecls('w')))
+								table.cell(valueRow, columnCounter)._tc.get_or_add_tcPr().append(shading_elm)
 								
 								columnCounter += 1
 								columnCount += 1
@@ -1328,10 +1336,10 @@ class KumKum(object):
 						value['s'] = tableS
 			
 			table = tableRooms
-			#self.addChart(table=table, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'])
+			self.addChart(table=table, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'])
 			table = self.newFile(table=table, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'], rooms=dictionary['rooms'], max_columns=dictionary['settings']['columns'])
 			table = self.newDoc(data=table, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'], rooms=dictionary['rooms'], max_columns=dictionary['settings']['columns'])
-			#self.dumpToJson(data=data, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'], table=table)
+			self.dumpToJson(data=data, months=dictionary['settings']['months_long_id'], month=monthYear['month'], year=monthYear['year'], table=table)
 		#print(sheets)
 		
 def main():
